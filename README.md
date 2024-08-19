@@ -1,12 +1,12 @@
 # DreamTeamProject
 ITEC330_Project
-Game ideas
-snake
-sudoku
-flippy bird
-tictac 
-chess
-checker
-maze
-hangman
-pong
+Game ideas 
+Snake - Paul
+Sudoku
+Flippy bird
+TicTac Toe - Peter
+Chess
+Checker
+Maze
+Hangman - Paul 
+Pong
