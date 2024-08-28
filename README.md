@@ -11,3 +11,4 @@ Checker
 Maze
 Hangman - Paul 
 Pong
+Wordle
