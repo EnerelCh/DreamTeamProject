@@ -1,0 +1,27 @@
+body {
+  background-color: gray;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 {
+  display: flex;
+  margin: 100px;
+  border: 1px black solid;
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+} 
+// waterfall model
+.sub_sontainer {
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.title {
+  color: orangered;
+  font-size: 48px;
+  // margin-inline-start: 50%;
+  // margin-inline-end: 20%;
+}
