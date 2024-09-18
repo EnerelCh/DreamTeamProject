@@ -1,0 +1,120 @@
+body{
+  position: absolute;
+  background-color: gray;
+
+  background-image: url("./image/butterfly-8177925_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  height: 700px;
+  width: 95vw;
+  max-width: 2560px;
+  background-color: gray;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.option {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  -ms-flex: 1;
+  height: 100px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(228, 127, 127);
+}
+
+.option a{
+  flex: flex;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: white;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  margin: 2px;
+  text-decoration: None;
+  color: black;
+}
+
+.option a div:hover{
+  background-color: gray;
+  color: white;
+  border-radius: 20px;
+}
+
+.title {
+  display: flex;
+  background-color: aqua;
+  color: black;
+  font-size: 48px;
+  height: max;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.body_container {
+  flex: flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: max;
+  width: max;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  // justify-content: center;
+
+  overflow-x: scroll;
+}
+.body_item p {
+  margin-bottom: 30px;
+}
+.body_container div img{
+  z-index: 1;
+  text-align: center;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.body_item {
+  display: flex;
+  display: inline-block;
+  height: 400px;
+  width: 300px;
+  margin: 5px;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: rgb(47, 114, 114);
+}
+
+.play_text {
+  color: black;
+}
+
+.play_text:hover{
+  font-size: 20px;
+}
+@media only screen and (max-width: 620px) {
+  // for mobile phones
+}
