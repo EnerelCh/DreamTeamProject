@@ -11,16 +11,17 @@ body {
 }
 .games-section {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   background-color: #f4f4f4;
   width: 80%;
   height: 80vh;
   margin: auto;
   overflow: hidden;
   margin-top: 10vh;
-  margin-bottom: 10vh;
   overflow-y: auto;
+  margin-bottom: 10vh;
+  border-radius: 20px;
 }
 .navbar {
 padding-bottom: 40px;
@@ -293,12 +294,13 @@ button:hover {
 
 table, th, td {
   border: 1px solid black;
+  // background-color: #fff;
 }
 
 table {
   width: 90%;
   border: none;
-  // background-color: #fff;
+  background-color: #fff;
   border-spacing: 10px;
 }
 
@@ -310,8 +312,8 @@ th, td {
 }
 
 tr {
-  background-color: #8a8b8b;
-  background: linear-gradient(to top, #ff0844 0%, #ff6b90 50%, #ffb199 100%);
+  background-color: #8b8b8b;
+  font-size: 24px;
 }
 .gold-medal {
   background-color:  #FEE101;
@@ -329,22 +331,22 @@ th {
 }
 
 td {
-  padding-left: 5px;
-  background-color: #b5b5b4;
   text-align: left;
+  padding-left: 5px;
+  background-color: #bcbcbc;
 }
 
 .profile {
-  width: 100%;
-  margin: 0px;
+  width: 95%;
   height: 500px;
-  background-color: #616161;
   color: white;
   align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  display: flex;
   justify-content: start;
+  justify-content: center;
+  background-color: #bcbcbc;
+  margin: 1vh;
+  display: flex;
+  border-radius: 10px;
 }
 
 .picture {
@@ -355,20 +357,20 @@ td {
 
 .picture  img{
   height: 150px;
-  border-radius: 100px;
-  border: 2px black solid;
   margin-left: 50px;
+  border-radius: 100px;
   background-color: #fff;
+  border: 2px black solid;
 }
 
 .name {
-  background-color: #8a8b8b;
+  width: auto;
   padding: 10px;
   border: 1px black;
   border-radius: 10px;
-  width: auto;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: #8a8b8b;
 }
 
 .name:hover {
@@ -376,10 +378,10 @@ td {
 }
 
 .edit {
+  widows: 10px;
+  height: 100px;
   margin-left: 100px;
   background-color: #fff;
-  height: 100px;
-  widows: 10px;
 }
 
 .leader-board {
