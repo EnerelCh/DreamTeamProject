@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #000000;
+}
+.games-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  overflow-y: auto;
+}
+.navbar {
+padding-bottom: 40px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171618;
+  padding: 20px 20px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.nav-logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: #ff8177;
+  background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.nav-menu li a:hover, .nav-menu li a.active {
+  background-color: #3d4345;
+  border-radius: 4px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .games-section {
+    margin-top: 5vh;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #171618;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+}
+
+.game-card {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.game-image {
+  width: 200px;
+  height: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+.game-name {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ffcc00;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.star:hover {
+  color: #ff9900;
+}
+
+.footer {
+  background-color: #171618;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px; */
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: start;
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #bfbfbf;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .games-section {
+    grid-template-columns: 1fr;
+    margin-top: 5vh;
+    // width: 90%;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  background-color: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #3d4345;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #3d4345;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3d4345;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 90%;
+  border: none;
+  background-color: #fff;
+  border-spacing: 10px;
+}
+
+th, td {
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  border-radius: 4px;
+}
+
+tr {
+  background-color: #8a8b8b;
+  background: linear-gradient(to top, #ff0844 0%, #ff6b90 50%, #ffb199 100%);
+}
+.gold-medal {
+  background-color:  #FEE101;
+  background: liner-gradient(to top, #fce32a 0%, #FEE101 100%);
+}
+.silver {
+  background-color: #D7D7D7;;
+}
+.bronze {
+  background-color: #A77044;
+}
+th {
+  color: #fff;
+
+}
+
+td {
+  padding-left: 5px;
+  background-color: #b5b5b4;
+  text-align: left;
+}
+
+.profile {
+  width: 100%;
+  margin: 0px;
+  height: 500px;
+  background-color: #616161;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: start;
+}
+
+.picture {
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+.picture  img{
+  height: 150px;
+  border-radius: 100px;
+  border: 1px yellow solid;
+  margin-left: 50px;
+}
+
+.name {
+  background-color: #8a8b8b;
+  padding: 10px;
+  border: 1px black;
+  border-radius: 10px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+
+.edit {
+  margin-left: 100px;
+  background-color: #fff;
+  height: 100px;
+  widows: 10px;
+}
+
+.leader-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  width: max;
+  height: max;
+  overflow: hidden;
+  margin-bottom: 2vh;
+  overflow-y: auto;
+}
