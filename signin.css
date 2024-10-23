@@ -46,10 +46,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  // .footer-container {
-  //   grid-template-columns: 1fr;
-  //   flex-direction: column;
-  // }
+  .footer-container {
+    grid-template-columns: 1fr;
+    // flex-direction: column;
+  }
   section {
     display: flex;
     flex-direction: column;

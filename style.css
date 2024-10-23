@@ -201,14 +201,15 @@
   @media (max-width: 768px) {
     .footer-container {
       grid-template-columns: 1fr;
+      flex-direction: column;
     }
   
     .games-section {
       grid-template-columns: 1fr;
     }
-    .footer-container {
-      flex-direction: column;
-    }
+    // .footer-container {
+    //   flex-direction: column;
+    // }
   }
 
 * {
